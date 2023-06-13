@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ascii-art-web</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="/icon/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/icon/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1 class="animated-text">Ascii art web</h1>
+    <form method="POST" action="/ascii-art">
+            <div class="image">
+                <div class="responsive-textarea" align="center" >
+                     <textarea name="entree" cols="50" rows="10" text-align="left" class="responsive-textarea" placeholder="enter your text ..." required></textarea><br>
+                </div>  
+            </div>
+    <section>
+        <p>choose:</p><input type="radio" id="radioButton" name="web" value="standard" checked ><label for="radioButton">standard</label><span><input type="radio" id="radioButton1" name="web" value="shadow"><label for="radioButton1" >shadow</label><input type="radio" id="radioButton2" name="web" value="thinkertoy"><label for="radioButton2" >thinkertoy</label><br>
+       <br>
+       <button>submit</button>
+    </section>
+    <br>
+    <div class="responsive-textarea" align="center">
+    <textarea name="entr" wrap="off" cols="180" rows="15" class="responsive-textarea" readonly >{{.Output}}</textarea>
+    </div>
+    </form>
+</body>
+</html>
